@@ -1,0 +1,32 @@
+.container{
+    position: relative;
+}
+.addButton{
+    margin-left: 385px;
+
+    border-radius:50px;
+}
+.archive {
+    margin-left: 440px;
+    border-radius:5px;
+    margin-right: 2px;
+    
+ 
+}
+
+.optionB{
+    border-width: 10px;
+    border-radius:50px;
+}
+.optionB:hover{
+    background-color: #c1c1c1;
+}
+
+#Hoo{
+    margin-left: -120px;
+
+}
+.scroll:hover{
+
+   background-color: #c1c1c1;
+}

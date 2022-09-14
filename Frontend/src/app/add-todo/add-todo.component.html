@@ -1,0 +1,18 @@
+<div class="border p-5" style="border-right: 1px solid #467fd0;">
+    <h3>Add Todo</h3>
+    <div class="d-flex flex-column justify-content-start mt-3">
+        <label>Title</label>
+        <input class="form-control" [(ngModel)]="todoObject.title" style="border-radius: 0px; outline: none; border: none; border-bottom: 2px solid #467fd0;">
+    </div>
+    <div class="d-flex flex-column justify-content-start mt-3">
+        <label>Description</label>
+        <textarea class="form-control" [(ngModel)]="todoObject.desc" style="border-radius: 0px; outline: none; border: none; border-bottom: 2px solid #467fd0;"></textarea>
+    </div>
+    <div class="d-flex flex-column justify-content-start mt-3">
+        <label>Date</label>
+        <input type="date" [(ngModel)]="todoObject.date" class="form-control" style="border-radius: 0px; outline: none; border: none; border-bottom: 2px solid #467fd0;">
+    </div>
+    <div class="d-flex flex-column justify-content-start mt-4">
+        <button class="btn btn-sm btn-primary rounded-pill" (click)="createTodo()">Create todo now</button>
+    </div>
+</div>

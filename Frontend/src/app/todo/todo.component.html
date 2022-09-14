@@ -1,0 +1,10 @@
+<div class="border p-5 d-flex flex-column justify-content-start align-items-center" style="height: 400px; overflow-y: auto;">
+  <div *ngFor="let todo of todoArray; let i = index;" class="shadow bg-white w-100 p-4 mt-2">
+      <h5>{{todo.title}}</h5>
+      <div class="mt-4 d-flex justify-content-between align-items-center">
+          <span>{{todo.date}}</span>
+          <button class="text-light btn btn-sm rounded-pill btn-info" (click)="moreInfo(i)">More info</button>
+      </div>
+  </div>
+  <h5 *ngIf="todoArray.length == 0;">No todo added yet.</h5>
+</div>
